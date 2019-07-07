@@ -2,75 +2,157 @@
 <head>
 
     <meta charset="UTF-8">
-    <!-- Responsive first meta tah -->
+
+    <!-- Responsive first meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <title>Michael Bentley</title>
 
+    <!-- Favicon -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Archivo+Black|Caveat|Comfortaa|Concert+One|Indie+Flower|Julius+Sans+One|Luckiest+Guy|Monoton|Poiret+One|Press+Start+2P|Roboto+Condensed|Ultra|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Merriweather+Sans|Pacifico|Raleway|Roboto|Roboto+Condensed|Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Dancing+Script|Gloria+Hallelujah|Permanent+Marker|Rajdhani|Righteous|Satisfy|Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f1a1fa7f88.js"></script>
+
+    <!-- Academicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body >
 
     <header>
-        <div class="bg-dark collapse" id="navbarHeader" style="">
-            <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                <h4 class="text-white">About</h4>
-                <p class="text-muted">I'm an evolutionary biologist, read more about me below.</p>
+        <nav class="navbar navbar-dark navbar-expand-xl fixed-top ">
+            <div class="container-fluid container-mod">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="javascript: scroll('home');">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript: scroll('research');">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript: scroll('publications');">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript: scroll('contact');">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                <h4 class="text-white">Contact</h4>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                    <li><a href="#" class="text-white">Like on Facebook</a></li>
-                    <li><a href="#" class="text-white">Email me</a></li>
-                </ul>
+                <div class="mx-auto order-0">
+                    <a class="navbar-brand mx-auto" href="#">Michael <i class="fas fa-dna nav-icon"></i> Bentley</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-twitter fa-lg nav-icon"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-github fa-lg nav-icon"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://scholar.google.co.uk/citations?user=EgcGAUMAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-lg scholar nav-icon"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-                <strong>Album</strong>
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            </div>
-        </div>
+        </nav>            
     </header>
-    <main>
-        <section class="jumbotron text-center">
-            <div class="container">
-                <h1 class="jumbotron-heading">Michael A. Bentley</h1>
-                <h3>Department of Zoology, University of Oxford</h3>
+
+
+    
+    <main id="home">
+        <div class="bg">
+            <div class="ov"> 
+                <div id="welcome" class="section-welcome">                
+                    <div class="container-fluid container-mod">
+                        <div class="row welcome">
+                            <div class="col-sm-6">
+                                <h1 class="welcome-h1">Welcome to my site!</h1>
+                                <p>I'm an evolutionary biologist in the Department of Zoology at the University of Oxford.</p>
+                                <p>I'm interested in social evolution theory, major evolutionary transitions, social insects, microbes, cancer, and the conceptual and mathematical foundations of evolutionary theory.</p>                                                        
+                                <a href="javascript: scroll('research');">
+                                    <i onclick="scroll('research')" class="fas fa-arrow-circle-down fa-2x"></i>
+                                </a> 
+                            </div>                            
+                        </div>                         
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <section id="research" class="section-research">
+            <div class="container-fluid container-mod">
+                <h1>My research</h1>
+                <a class="align-bottom" href="javascript: scroll('publications');">
+                    <i class="fas fa-arrow-circle-down fa-2x arrow"></i>
+                </a>
+            </div>            
         </section>
 
-        <div class="container">
-            <h4>Welcome to my site!</h4>
-            <p class="lead text-muted">I'm an evolutionary biologist with broad interests in areas such as social evolution theory, major evolutionary transitions, social insects, microbes, cancer, and the conceptual and mathematical foundations of evolutionary theory.</p>
-            <p class="lead text-muted">My research is fairly interdisciplinary in nature. Much of it rests on using mathematical and computational models to represent biological populations as dynamical systems using ODEs, PDEs, and stochastic individual-based models. I also use bioinformatics, statistics, and occasionally machine learning techniques, to study genomics and molecular evolution. I've even spent some time in the wet lab!</p>
-        </div>
+        <div class="parallax parallax-research"></div>
+
+        <section id="publications" class="section-publications">            
+            <div class="container-fluid container-mod">
+                <h1>My publications</h1>
+                <a class="align-bottom" href="javascript: scroll('contact');">
+                    <i class="fas fa-arrow-circle-down fa-2x arrow"></i>
+                </a>
+            </div>  
+        </section>
+
+        <div class="parallax parallax-publications"></div>
+
+        <section id="contact" class="section-contact">            
+            <div class="container-fluid container-mod">
+                <h1>My contact details</h1>
+                <a class="align-bottom" href="javascript: scroll('footer');">
+                    <i class="fas fa-arrow-circle-down fa-2x arrow"></i>
+                </a>
+            </div>  
+        </section>
+
+        <div class="parallax parallax-contact"></div>
+
     </main>
-    <footer>
+
+    <footer id="footer">
 
     </footer>
-
-
-        
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        function scroll(id){
+
+            const element = document.getElementById(id);
+            const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
+            const yOffset = -75; 
+
+            window.scrollTo({
+                top: yCoordinate + yOffset,
+                behavior: 'smooth'
+            });
+
+        }
+    </script>
 
 </body>
 </html>
