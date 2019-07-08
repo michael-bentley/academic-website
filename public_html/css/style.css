@@ -1,20 +1,21 @@
 body, html {
-    height: 100%;
+	height: 100%;
+	width: 100%;
     font-family: 'Poiret One', cursive;    
     font-size: 24px;            
 }
 
 .navbar{
     height:85px;
-    background-color: #212121;
-    border-bottom: 2px solid #FFEB3B;
+    background-color: #607D8B;
+    border-bottom: 2px solid #CFD8DC;
 }
 
 .navbar .navbar-toggler{
     background-color: #FFEB3B;
-    font-size: 15px;
-    margin-left: 10px;
-    transform: translateY(6%);
+    font-size: 16px;
+    margin-left: 0px;
+    transform: translateY(-1%);
 }
 
 .navbar-brand{
@@ -28,7 +29,7 @@ body, html {
 }
 
 .navbar-brand:hover{
-    color: #9E9E9E;
+    color: white;
 }
 
 .nav-link{    
@@ -53,7 +54,7 @@ body, html {
     .navbar-brand{
         position: absolute;
         top: 15%;
-        left: 25%;
+        left: 20%;
     }
 
     .navbar-toggler{
@@ -67,10 +68,6 @@ body, html {
     color: #FFEB3B !important;
 }
 
-.nav-link:hover{
-    color: #FFEB3B;
-}
-
 .nav-icon{
     color: #FFEB3B;    
 }
@@ -81,11 +78,6 @@ body, html {
 
 .scholar{
     font-size: 35px;
-}
-
-.btn-read{
-    background-color: #FFEB3B;
-    font-weight: bold;
 }
 
 .btn-read:hover{
@@ -108,7 +100,7 @@ body, html {
 
 .ov {
     /* The image used */
-    background: rgba(0, 0, 0, 0.78);
+    background: rgba(0, 0, 0, 0.7);
 
     /* Full height */
     height: 100%; 
@@ -119,38 +111,42 @@ body, html {
     background-size: cover;
 }
 
+.section-welcome{
+    position: relative;
+    top: 55%;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.section-welcome h1 i{
+    color: #FFEB3B;
+    /* font-weight: bold; */
+}
+
 section{
-    /* min-height: 100vh; */
-    border-top: 3px solid #FFEB3B;
-    border-bottom: 3px solid #FFEB3B;
+    border-top: 2px solid #FFEB3B;
+    border-bottom: 2px solid #FFEB3B;
     background-color: white;
     padding-top: 75px;
     padding-bottom: 75px;
 }
 
-.research-details{
-    margin-top:50px;
-    margin-bottom:50px;
+section h1{
+	color: #455A64;
 }
 
-.section-welcome{
-    position: relative;
-    top: 55%;
-    color: white;
-}
-
-.section-welcome h2{
-    font-weight: bold;
+section h1 i{
+    color: #FFEB3B;
 }
 
 /* Change the navigation bar style when it goes to the dropdown. */
 @media (max-width:750px), (max-height: 750px){
 
     .bg{
-        height: 950px;
+        height: 850px;
     }
     .ov {
-        height: 950px;
+        height: 850px;
     }
 
     .section-welcome{
@@ -159,13 +155,13 @@ section{
 
 }
 
-
-.section-research{
-    
+.research-details{
+    margin-top:50px;
+    margin-bottom:50px;
 }
 
-.section-publications{
-    
+.section-contact p i{
+    color: #607D8B;
 }
 
 .section-publications input{
@@ -179,25 +175,33 @@ table {
     margin-bottom:50px;
 } 
 th { 
-    background-color:#424242; 
-    color:white; 
+    background-color:#607D8B; 
+    color:#FFEB3B; 
     font-size: 20px; 
 } 
 
 th a { 
-    background-color:#424242; 
     font-weight: bold;
-    color:white; 
-    font-family: 'Poiret One', cursive;         
+    color:#FFEB3B; 
+    font-family: 'Poiret One', cursive;       
+    pointer-events: none; 
+    cursor: default;   
 }
+
+th a:hover { 
+    color: #37474F;        
+    text-decoration: none;
+}
+
 td a {
-    color:#424242;
+    color:#37474F;
     font-size: 20px;
     font-weight: bold;
 }
 
 td a:hover {
-    color:black;
+    color:#37474F;
+    text-decoration: none;
 }
 
 th, td { 
@@ -216,19 +220,16 @@ th, td {
     display: none;
 }
 
-.section-contact{
-    
-}
-
 .map{
     margin-top:50px;
-    margin-bottom:50px;
+    margin-bottom:50px;    
 }
 
 #map {
     width: 100%;
     height: 400px;
-    background-color: grey;
+    background-color: #37474F;
+    border: 6px solid #607D8B;
 }
 
 .parallax{
@@ -249,24 +250,28 @@ th, td {
     background-size: cover;
 }
 
+.parallax-about { 
+    background-image: url("../imgs/aquarium-aquatic-biology-1522160.jpg");
+}
+
 .parallax-research { 
-    background-image: url("../imgs/animal-biology-blurred-background-751682.jpg");
+    background-image: url("../imgs/biology-butterflies-collection-1028904.jpg");
 }
 
 .parallax-publications { 
-    background-image: url("../imgs/bright-clean-clear-459609.jpg");
-}
-
-.parallax-contact { 
     background-image: url("../imgs/beekeeping-bees-beeswax-971355.jpg");
 }
 
+.parallax-contact { 
+    background-image: url("../imgs/bright-clean-clear-459609.jpg");
+}
+
 .fa-arrow-circle-down{
-    color: #FFEB3B;
+    color: #607D8B;
 }
 
 .fa-arrow-circle-down:hover{
-    color: #212121;
+    color: #37474F;
 }
 
 .arrow{
@@ -275,7 +280,54 @@ th, td {
 }
 
 footer{
-    height: 500px;
-    background-color: #212121;
-    border-top: 3px solid #FFEB3B;
+    position: relative;
+    padding-top: 50px;
+    background-color: #455A64;
+    border-top: 1px solid #CFD8DC;
+    padding-bottom: 100px;
+    color: #F5F5F5;
+    font-size: 20px;
+}
+
+/* .copyright{
+    position: absolute;
+    bottom: 0; 
+    bottom: 0px;
+    line-height: 0;
+    width: 100%;
+    border-top: 2px solid #546E7A;
+    background-color: #37474F;
+    color: #F5F5F5;
+    font-size: 18px;
+} */
+
+.footer-copyright{  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #546E7A;
+    background-color: #37474F;
+}
+
+.footer-copyright a{  
+    color:#FFEB3B;
+}
+
+
+footer h5{
+    color: white;    
+}
+
+footer a{
+    color: #F5F5F5;
+    font-size: 20px;
+}
+
+footer a:hover{
+    color:#FFEB3B;
+    text-decoration: none;
+}
+
+footer h5 i{
+    color: #FFEB3B;
 }

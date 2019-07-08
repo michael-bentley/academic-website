@@ -9,7 +9,14 @@
     <title>Michael Bentley</title>
 
     <!-- Favicon -->
-
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+	<link rel="icon" type="images/png" sizes="32x32" href="icons/favicon-32x32.png">
+	<link rel="icon" type="images/png" sizes="16x16" href="icons/favicon-16x16.png">
+	<link rel="manifest" href="icons/site.webmanifest">
+	<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#f5f5f5">
+	<meta name="msapplication-TileColor" content="#f5f5f5">
+	<meta name="theme-color" content="#f5f5f5">
+	
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Archivo+Black|Caveat|Comfortaa|Concert+One|Indie+Flower|Julius+Sans+One|Luckiest+Guy|Monoton|Poiret+One|Press+Start+2P|Roboto+Condensed|Ultra|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
@@ -33,395 +40,707 @@
 
     <header>
         <nav class="navbar navbar-dark navbar-expand-xl fixed-top ">
-            <div class="container-fluid">
-                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="javascript: scroll('home');">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript: scroll('research');">Research</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript: scroll('publications');">Publications</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript: scroll('contact');">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mx-auto order-0">
-                    <a class="navbar-brand mx-auto" href="#">Michael <i class="fas fa-dna nav-icon"></i> Bentley</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fab fa-twitter fa-lg nav-icon"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fab fa-github fa-lg nav-icon"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://scholar.google.co.uk/citations?user=EgcGAUMAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-lg scholar nav-icon"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+			<div class="container-fluid">
+				<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="javascript: scroll('home');">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript: scroll('about');">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript: scroll('research');">Research</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript: scroll('publications');">Publications</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript: scroll('contact');">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mx-auto order-0">
+					<a class="navbar-brand mx-auto" href="#">Michael <i class="fas fa-dna nav-icon"></i> Bentley</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="https://twitter.com/m_a_bentley?lang=en-gb"><i
+									class="fab fa-twitter fa-lg nav-icon"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://github.com/michael-bentley"><i
+									class="fab fa-github fa-lg nav-icon"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://scholar.google.co.uk/citations?user=EgcGAUMAAAAJ&hl=en"><i
+									class="ai ai-google-scholar-square ai-lg scholar nav-icon"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
         </nav>            
     </header>
 
 
-    
-    <main id="home">
-        <div class="bg">
-            <div class="ov"> 
-                <div id="welcome" class="section-welcome">                
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-9">
-                                <h1><i class="fas fa-child"></i> Welcome to my website!</h1>
-                                <p>I'm an evolutionary biologist in the Department of Zoology at the University of Oxford.</p>
-                                <p>I'm interested in social evolution theory, major evolutionary transitions, social insects, microbes, cancer, and the conceptual and mathematical foundations of evolutionary theory.</p>                                                        
-                                <a href="javascript: scroll('research');">
-                                    <i onclick="scroll('research')" class="fas fa-arrow-circle-down fa-2x"></i>
-                                </a> 
-                            </div>                            
-                        </div>                         
-                    </div>
-                </div>
-            </div>
-        </div>
+	<main id="home">
+		<div class="bg">
+			<div class="ov">
+				<div id="welcome" class="section-welcome">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-9">
+								<h1><i class="fas fa-child"></i> Welcome to my website!</h1>
+								<p>I'm an evolutionary biologist in the Department of Zoology at the University of Oxford.
+								</p>
+								<p>I'm interested in social evolution theory, major evolutionary transitions, social
+									insects, microbes, cancer, and the conceptual and mathematical foundations of
+									evolutionary theory.</p>
+								<a href="javascript: scroll('about');">
+									<i onclick="scroll('about')" class="fas fa-arrow-circle-down fa-2x"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
 
-        <section id="research" class="section-research">
-            <div class="container">
-                <h1><i class="fas fa-microscope"></i> Research</h1>
+	<section id="about" class="section-about">
+		<div class="container">
+			<h1><i class="fas fa-address-card"></i> About me</h1>
+	
+			<h4>Latest</h4>
+			<p>I recently finished a postdoc in <a href="http://www.sumnerlab.co.uk/the-group/seirian-sumner/">Seirian Sumner</a>'s lab at UCL to begin a new postdoc in <a href="https://zoo-kfoster.zoo.ox.ac.uk/">Kevin Foster</a>'s lab in the Department of Zoology at the University of Oxford. This marks a transition for me from working mostly on the mechanism that underpin major evolutionary transitions in social insects, to working on the ecology and evolution of microbes.</p>
+			<p></p>
+			
+			<h4>Old history</h4>
+			<p>I originally trained as a biologist at the University of Newcastle, where I spent some time working on honeybees with <a href="https://www.zoo.ox.ac.uk/people/professor-geraldine-wright">Jeri Wright</a> (now in Oxford).
+			<p>I then moved on to do a master's degree at the University of Leeds, where I worker with <a href="https://biologicalsciences.leeds.ac.uk/school-of-biology/staff/28/prof-tim-benton">Tim Benton</a> building plant-pollinator models using stochastic simulations and artificial neural networks.
+			</p>
+			<p>Afterwards, I went on to do my DPhil in mathematical biology (theoretical ecology and evolution) at the University of Oxford, supervised by <a href="https://www.plants.ox.ac.uk/people/gail-preston">Gail Preston</a>, <a href="https://zoo-kfoster.zoo.ox.ac.uk/">Kevin Foster</a>, <a href="https://kityates.com/">Kit Yates</a> (now at Bath), and <a href="https://www.stats.ox.ac.uk/all-people/jotun-hein/">Jotun Hein</a>. In my thesis I focussed on the conceptual and mathematical underpinnings of evolutionary theory. In particular, 
+			I focussed on how natural selection can be modelled using approaches from dynamical systems theory, such as systems of ODEs and PDEs. </p>
+			</p>
+			<a class="align-bottom" href="javascript: scroll('research');">
+				<i class="fas fa-arrow-circle-down fa-2x arrow"></i>
+			</a>
+		</div>
+	</section>
+	
+		<div class="parallax parallax-about"></div>
+		
+		<section id="research" class="section-research">
+			<div class="container">
+				<h1><i class="fas fa-microscope"></i> Research</h1>
+		
+				<div class="research-details">
+					<h2>Coming soon!</h2>
+				</div>
+		
+		
+				<a class="align-bottom" href="javascript: scroll('publications');">
+					<i class="fas fa-arrow-circle-down fa-2x arrow"></i>
+				</a>
+			</div>
+		</section>
+		
+		<div class="parallax parallax-research"></div>
+		
+		<section id="publications" class="section-publications">
+			<div class="container">
+				<h1><i class="fas fa-file-alt"></i> Publications</h1>
+				<div id="publications-table">
+					<div id="gsc_a_tw">
+						<table id="gsc_a_t">
+							<thead id="gs_sth">
+								<tr id="gsc_a_tr0" aria-hidden="true" class="gs_sth_g">
+									<th class="gsc_a_x"></th>
+									<th class="gsc_a_t"></th>
+									<th class="gsc_a_c"></th>
+									<th class="gsc_a_y"></th>
+								</tr>
+								<tr id="gsc_a_trh" class="gs_sth_b">
+									<th class="gsc_a_x" scope="col"><span id="gsc_a_xall"><a href="javascript:void(0)"
+												id="gsc_x_all" role="checkbox" aria-checked="false" aria-label="Select all"
+												data-s="0" class="gs_cb_gen gs_in_cb gs_in_cbj"><span
+													class="gs_lbl"></span><span class="gs_chk"></span><span
+													class="gs_cbx"></span></a></span></th>
+									<th class="gsc_a_t" scope="col"><span id="gsc_a_ta"><a
+												href="/citations?hl=en&amp;user=EgcGAUMAAAAJ&amp;view_op=list_works&amp;sortby=title"
+												class="gsc_a_a">Title</a></span>
+										<div id="gsc_dd_add-r" class="gs_md_r gs_md_rmb gs_md_rmbl"><button type="button"
+												id="gsc_dd_add-b" aria-controls="gsc_dd_add-d" aria-haspopup="true"
+												ontouchstart="gs_evt_dsp(event)"
+												class="gs_btnUCT gs_in_ib gs_btn_flat gs_btn_lrge gs_btn_half gs_btn_lsu gs_press gs_md_tb"><span
+													class="gs_wr"><span class="gs_ico"></span><span
+														class="gs_lbl"></span></span></button>
+											<div id="gsc_dd_add-d" class="gs_md_d gs_md_ulr" role="menu" tabindex="-1">
+												<div class="gsc_dd_sec"><a class="gs_md_li" role="menuitem" tabindex="-1"
+														href="javascript:void(0)"
+														data-a="/citations?view_op=import_lookup&amp;hl=en&amp;imq=Michael+A.+Bentley&amp;json=">Add
+														article groups</a><a class="gs_md_li" role="menuitem" tabindex="-1"
+														href="javascript:void(0)"
+														data-a="/citations?view_op=import_lookup&amp;hl=en&amp;imq=Michael+A.+Bentley&amp;json=&amp;btnA=1">Add
+														articles</a><a class="gs_md_li" role="menuitem" tabindex="-1"
+														href="javascript:void(0)"
+														data-a="/citations?view_op=add_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate">Add
+														article manually</a></div>
+												<div class="gsc_dd_sec gsc_dd_sep"><a class="gs_md_li" role="menuitem"
+														tabindex="-1"
+														href="/citations?view_op=list_updates&amp;hl=en&amp;user=EgcGAUMAAAAJ">Configure
+														article updates</a></div>
+											</div>
+										</div><button type="button" id="gsc_btn_mer"
+											class="gs_btnMRG gs_in_ib gs_btn_flat gs_btn_lrge gs_btn_lsu gs_btn_mph"
+											disabled=""><span class="gs_wr"><span class="gs_ico"></span><span
+													class="gs_lbl">Merge</span></span></button><button type="submit"
+											id="gsc_btn_del" name="trash_btn"
+											class="gs_btnDE gs_in_ib gs_btn_flat gs_btn_lrge gs_btn_lsu gs_btn_mph"><span
+												class="gs_wr"><span class="gs_ico"></span><span
+													class="gs_lbl">Delete</span></span></button>
+										<div id="gsc_dd_exp-r" class="gs_md_r gs_md_rmb gs_md_rmbl"><button type="button"
+												id="gsc_dd_exp-b" aria-controls="gsc_dd_exp-d" aria-haspopup="true"
+												ontouchstart="gs_evt_dsp(event)"
+												class="gs_btnDWL gs_in_ib gs_btn_flat gs_btn_lrge gs_btn_lsu gs_btn_mph gs_press gs_md_tb"><span
+													class="gs_wr"><span class="gs_ico"></span><span
+														class="gs_lbl">Export</span></span></button>
+											<div id="gsc_dd_exp-d" class="gs_md_d gs_md_ulr" role="menu" tabindex="-1">
+												<div class="gs_md_ul gs_md_ul_tb gs_md_ulr"><a class="gs_md_li" role="menuitem"
+														tabindex="-1" href="javascript:void(0)" data-a="0">BibTeX</a><a
+														class="gs_md_li" role="menuitem" tabindex="-1" href="javascript:void(0)"
+														data-a="2">EndNote</a><a class="gs_md_li" role="menuitem" tabindex="-1"
+														href="javascript:void(0)" data-a="3">RefMan</a><a class="gs_md_li"
+														role="menuitem" tabindex="-1" href="javascript:void(0)"
+														data-a="4">CSV</a></div>
+											</div>
+										</div>
+										<div id="gsc_dd_mor-r" class="gs_md_r gs_md_rmb gs_md_rmbl"><button type="button"
+												id="gsc_dd_mor-b" aria-controls="gsc_dd_mor-d" aria-haspopup="true"
+												ontouchstart="gs_evt_dsp(event)"
+												class="gs_btnMOR gs_in_ib gs_btn_flat gs_btn_lrge gs_btn_half gs_btn_lsu gs_press gs_md_tb"><span
+													class="gs_wr"><span class="gs_ico"></span><span
+														class="gs_lbl"></span></span></button>
+											<div id="gsc_dd_mor-d" class="gs_md_d gs_md_ulr" role="menu" tabindex="-1">
+												<div class="gsc_dd_sec"><a role="menuitem"
+														href="/citations?view_op=list_trash&amp;hl=en" tabindex="-1"
+														class="gs_md_li">View trash</a></div>
+												<div id="gsc_dd_mor-s" class="gs_oph gsc_dd_sec gsc_dd_sep"><a role="menuitem"
+														href="/citations?hl=en&amp;user=EgcGAUMAAAAJ&amp;view_op=list_works"
+														tabindex="-1" class="gs_md_li">Sort by citations</a><a role="menuitem"
+														href="/citations?hl=en&amp;user=EgcGAUMAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
+														tabindex="-1" class="gs_md_li gsc_dd_mor-sel">Sort by year</a><a
+														role="menuitem"
+														href="/citations?hl=en&amp;user=EgcGAUMAAAAJ&amp;view_op=list_works&amp;sortby=title"
+														tabindex="-1" class="gs_md_li">Sort by title</a></div>
+												<div id="gsc_dd_mor-p" class="gsc_dd_sep">Select articles to see merge, delete,
+													and export buttons</div>
+											</div>
+										</div>
+									</th>
+									<th class="gsc_a_c" scope="col" dir="rtl"><span id="gsc_a_ca"><a
+												href="/citations?hl=en&amp;user=EgcGAUMAAAAJ&amp;view_op=list_works"
+												class="gsc_a_a">Cited by</a></span></th>
+									<th class="gsc_a_y" scope="col"><span class="gsc_a_h" id="gsc_a_ha">Year</span></th>
+								</tr>
+							</thead>
+							<tbody id="gsc_a_b">
+								<tr class="gsc_a_tr">
+									<td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input
+												type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:YsMSGLbcyi4C"
+												value="EgcGAUMAAAAJ:YsMSGLbcyi4C"><label
+												for="gsc_xEgcGAUMAAAAJ:YsMSGLbcyi4C"></label><span class="gs_chk"></span><span
+												class="gs_cbx"></span></span></td>
+									<td class="gsc_a_t"><a href="javascript:void(0)"
+											data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:YsMSGLbcyi4C"
+											class="gsc_a_at">Molecular high-grade B cell lymphoma: defining a poor risk group
+											requiring different approaches to therapy</a>
+										<div class="gs_gray">C Sha, S Barrans, F Cucco, MA Bentley, MA Care, T Cummin, H
+											Kennedy, ...</div>
+										<div class="gs_gray">Journal of Clinical Oncology 37 (3), 202-213<span class="gs_oph">,
+												2019</span></div>
+									</td>
+									<td class="gsc_a_c"><a
+											href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=7946787517570199311"
+											class="gsc_a_ac gs_ibl">10</a></td>
+									<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2019</span></td>
+								</tr>
+								<tr class="gsc_a_tr">
+									<td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input
+												type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:Tyk-4Ss8FVUC"
+												value="EgcGAUMAAAAJ:Tyk-4Ss8FVUC"><label
+												for="gsc_xEgcGAUMAAAAJ:Tyk-4Ss8FVUC"></label><span class="gs_chk"></span><span
+												class="gs_cbx"></span></span></td>
+									<td class="gsc_a_t"><a href="javascript:void(0)"
+											data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:Tyk-4Ss8FVUC"
+											class="gsc_a_at">Social wasps as models to study the major evolutionary transition
+											to superorganismality</a>
+										<div class="gs_gray">D Taylor, MA Bentley, S Sumner</div>
+										<div class="gs_gray">Current opinion in insect science 28, 26-32<span class="gs_oph">,
+												2018</span></div>
+									</td>
+									<td class="gsc_a_c"><a
+											href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=7901727735096027353"
+											class="gsc_a_ac gs_ibl">1</a></td>
+									<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2018</span></td>
+								</tr>
+								<tr class="gsc_a_tr">
+									<td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input
+												type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:IjCSPb-OGe4C"
+												value="EgcGAUMAAAAJ:IjCSPb-OGe4C"><label
+												for="gsc_xEgcGAUMAAAAJ:IjCSPb-OGe4C"></label><span class="gs_chk"></span><span
+												class="gs_cbx"></span></span></td>
+									<td class="gsc_a_t"><a href="javascript:void(0)"
+											data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:IjCSPb-OGe4C"
+											class="gsc_a_at">GABA (γ-Aminobutyric Acid) Uptake Via the GABA Permease GabP
+											Represses Virulence Gene Expression in <i>Pseudomonas syringae</i> pv. tomato
+											DC3000</a>
+										<div class="gs_gray">SL McCraw, DH Park, R Jones, MA Bentley, A Rico, RG Ratcliffe, ...
+										</div>
+										<div class="gs_gray">Molecular Plant-Microbe Interactions 29 (12), 938-949<span
+												class="gs_oph">, 2016</span></div>
+									</td>
+									<td class="gsc_a_c"><a
+											href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=7670052584093700671,5511352434519727397,9993304024869519245"
+											class="gsc_a_ac gs_ibl">6</a></td>
+									<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2016</span></td>
+								</tr>
+								<tr class="gsc_a_tr">
+									<td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input
+												type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:UeHWp8X0CEIC"
+												value="EgcGAUMAAAAJ:UeHWp8X0CEIC"><label
+												for="gsc_xEgcGAUMAAAAJ:UeHWp8X0CEIC"></label><span class="gs_chk"></span><span
+												class="gs_cbx"></span></span></td>
+									<td class="gsc_a_t"><a href="javascript:void(0)"
+											data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:UeHWp8X0CEIC"
+											class="gsc_a_at">Validation of reference genes for robust qRT-PCR gene expression
+											analysis in the rice blast fungus Magnaporthe oryzae</a>
+										<div class="gs_gray">SC Omar, MA Bentley, G Morieri, GM Preston, SJ Gurr</div>
+										<div class="gs_gray">PloS one 11 (8), e0160637<span class="gs_oph">, 2016</span></div>
+									</td>
+									<td class="gsc_a_c"><a
+											href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=17856639426989945807"
+											class="gsc_a_ac gs_ibl">7</a></td>
+									<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2016</span></td>
+								</tr>
+								<tr class="gsc_a_tr">
+									<td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input
+												type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:qjMakFHDy7sC"
+												value="EgcGAUMAAAAJ:qjMakFHDy7sC"><label
+												for="gsc_xEgcGAUMAAAAJ:qjMakFHDy7sC"></label><span class="gs_chk"></span><span
+												class="gs_cbx"></span></span></td>
+									<td class="gsc_a_t"><a href="javascript:void(0)"
+											data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:qjMakFHDy7sC"
+											class="gsc_a_at">Conservation, duplication, and divergence of five opsin genes in
+											insect evolution</a>
+										<div class="gs_gray">R Feuda, F Marletaz, MA Bentley, PWH Holland</div>
+										<div class="gs_gray">Genome biology and evolution 8 (3), 579-587<span class="gs_oph">,
+												2016</span></div>
+									</td>
+									<td class="gsc_a_c"><a
+											href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=2860190607999997052,7918005297226278533"
+											class="gsc_a_ac gs_ibl">29</a></td>
+									<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2016</span></td>
+								</tr>
+								<tr class="gsc_a_tr">
+									<td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input
+												type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:2osOgNQ5qMEC"
+												value="EgcGAUMAAAAJ:2osOgNQ5qMEC"><label
+												for="gsc_xEgcGAUMAAAAJ:2osOgNQ5qMEC"></label><span class="gs_chk"></span><span
+												class="gs_cbx"></span></span></td>
+									<td class="gsc_a_t"><a href="javascript:void(0)"
+											data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:2osOgNQ5qMEC"
+											class="gsc_a_at">Human oxygen sensing may have origins in prokaryotic elongation
+											factor Tu prolyl-hydroxylation</a>
+										<div class="gs_gray">JS Scotti, IKH Leung, W Ge, MA Bentley, J Paps, HB Kramer, J Lee,
+											...</div>
+										<div class="gs_gray">Proceedings of the National Academy of Sciences 111 (37),
+											13331-13336<span class="gs_oph">, 2014</span></div>
+									</td>
+									<td class="gsc_a_c"><a
+											href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=13875550299593568114"
+											class="gsc_a_ac gs_ibl">46</a></td>
+									<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2014</span></td>
+								</tr>
+								<tr class="gsc_a_tr">
+									<td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input
+												type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:d1gkVwhDpl0C"
+												value="EgcGAUMAAAAJ:d1gkVwhDpl0C"><label
+												for="gsc_xEgcGAUMAAAAJ:d1gkVwhDpl0C"></label><span class="gs_chk"></span><span
+												class="gs_cbx"></span></span></td>
+									<td class="gsc_a_t"><a href="javascript:void(0)"
+											data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:d1gkVwhDpl0C"
+											class="gsc_a_at">Pseudomonas protegens Pf-5 causes discoloration and pitting of
+											mushroom caps due to the production of antifungal metabolites</a>
+										<div class="gs_gray">MD Henkels, TA Kidarsa, BT Shaffer, NC Goebel, P Burlinson, ...
+										</div>
+										<div class="gs_gray">Molecular Plant-Microbe Interactions 27 (7), 733-746<span
+												class="gs_oph">, 2014</span></div>
+									</td>
+									<td class="gsc_a_c"><a
+											href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=10639979752598194990"
+											class="gsc_a_ac gs_ibl">11</a></td>
+									<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2014</span></td>
+								</tr>
+								<tr class="gsc_a_tr">
+									<td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input
+												type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:u-x6o8ySG0sC"
+												value="EgcGAUMAAAAJ:u-x6o8ySG0sC"><label
+												for="gsc_xEgcGAUMAAAAJ:u-x6o8ySG0sC"></label><span class="gs_chk"></span><span
+												class="gs_cbx"></span></span></td>
+									<td class="gsc_a_t"><a href="javascript:void(0)"
+											data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:u-x6o8ySG0sC"
+											class="gsc_a_at">Circulating microRNA profiles reflect the presence of breast
+											tumours but not the profiles of microRNAs within the tumours</a>
+										<div class="gs_gray">VJ Cookson, MA Bentley, BV Hogan, K Horgan, BE Hayward, ...</div>
+										<div class="gs_gray">Cellular Oncology 35 (4), 301-308<span class="gs_oph">, 2012</span>
+										</div>
+									</td>
+									<td class="gsc_a_c"><a
+											href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=15436913953503934174"
+											class="gsc_a_ac gs_ibl">70</a></td>
+									<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2012</span></td>
+								</tr>
+								<tr class="gsc_a_tr">
+									<td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input
+												type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:u5HHmVD_uO8C"
+												value="EgcGAUMAAAAJ:u5HHmVD_uO8C"><label
+												for="gsc_xEgcGAUMAAAAJ:u5HHmVD_uO8C"></label><span class="gs_chk"></span><span
+												class="gs_cbx"></span></span></td>
+									<td class="gsc_a_t"><a href="javascript:void(0)"
+											data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:u5HHmVD_uO8C"
+											class="gsc_a_at">Reward quality influences the development of learned olfactory
+											biases in honeybees</a>
+										<div class="gs_gray">GA Wright, AF Choudhary, MA Bentley</div>
+										<div class="gs_gray">Proceedings of the Royal Society B: Biological Sciences 276 (1667),
+											2597-2604<span class="gs_oph">, 2009</span></div>
+									</td>
+									<td class="gsc_a_c"><a
+											href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=3229307655214097246"
+											class="gsc_a_ac gs_ibl">46</a></td>
+									<td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2009</span></td>
+								</tr>
+							</tbody>
+						</table>
+						<div id="gsc_a_sp"></div>
+						<div id="gsc_a_err" class="gs_alrt">The system can't perform the operation now. Try again later.</div>
+					</div>
+				</div>
+				<a class="align-bottom" href="javascript: scroll('contact');">
+					<i class="fas fa-arrow-circle-down fa-2x arrow"></i>
+				</a>
+			</div>
+		</section>
+		
+		<div class="parallax parallax-publications"></div>
+		
+		<section id="contact" class="section-contact">
+			<div class="container">
+				<h1><i class="fas fa-envelope"></i> Contact</h1>
+				<div class="row map">
+					<div class="col-sm-5">
+						<h4>Dr Michael A. Bentley</h4>
+						<p>Department of Biochemistry</p>
+						<p>University of Oxford</p>
+						<p>3 S Parks Rd</p>
+						<p>Oxford</p>
+						<p>OX1 3QU</p>
+		
+						<p>michael.bentley <i class="fas fa-at fa-sm"></i> zoo.ox.ac.uk</p>
+					</div>
+					<div class="col-sm-7">
+						<div id="map"></div>
+					</div>
+				</div>
+				<a class="align-bottom" href="javascript: scroll('footer');">
+					<i class="fas fa-arrow-circle-down fa-2x arrow"></i>
+				</a>
+			</div>
+		</section>
+		
+		<div class="parallax parallax-contact"></div>
 
-                <div class="research-details">
-                    <h2>Coming soon!</h2>
-                </div>
-                
+	</main>
 
-                <a class="align-bottom" href="javascript: scroll('publications');">
-                    <i class="fas fa-arrow-circle-down fa-2x arrow"></i>
-                </a>
-            </div>            
-        </section>
 
-        <div class="parallax parallax-research"></div>
+	<footer class="page-footer">
+		<div class="container text-center text-md-left">
+	
+			<div class="row">
+				<div class="col-md-6 mt-md-0 mb-3">
+					<h5><i class="fas fa-hand-paper"></i> Goodbye</h5>
+					Thanks for visiting and please don't hesitate to get in touch if you want to discuss anything!
+				</div>	
+				<hr class="clearfix w-100 d-md-none pb-3">
+				<div class="col-md-3 mb-md-0 mb-3">
+					<h5 >Internal links</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="https://zoo-kfoster.zoo.ox.ac.uk/">Kevin Foster Lab</a>
+						</li>
+						<li>
+							<a href="https://www.zoo.ox.ac.uk/">Department of Zoology</a>
+						</li>
+						<li>
+							<a href="http://www.ox.ac.uk/">University of Oxford</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 mb-md-0 mb-3">
+					<h5>External links</h5>
+					<ul class="list-unstyled">
+						<li class="nav-item">
+							<a class="nav-link" href="https://twitter.com/m_a_bentley?lang=en-gb"><i
+									class="fab fa-twitter fa-lg nav-icon"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://github.com/michael-bentley"><i
+									class="fab fa-github fa-lg nav-icon"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://scholar.google.co.uk/citations?user=EgcGAUMAAAAJ&hl=en"><i
+									class="ai ai-google-scholar-square ai-lg scholar nav-icon"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+		</div>
+	
+		<div class="footer-copyright text-center py-2">© 2019 Copyright:
+			<a href="#">michaelbentley.com</a>
+		</div>
+	
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	
+	<script>
+		$('.navbar-nav a').on('click', function () {
+			$('.navbar-nav').find('li.active').removeClass('active');
+			$(this).parent('li').addClass('active');
+		});
+	</script>
+	
+	<script>
+		function scroll(id) {
 
-        <section id="publications" class="section-publications">            
-            <div class="container">
-                <h1><i class="fas fa-file-alt"></i> Publications</h1>
-                <div id="publications-table">
-                    <div id="gsc_a_tw"><table id="gsc_a_t"><thead id="gs_sth"><tr id="gsc_a_tr0" aria-hidden="true" class="gs_sth_g"><th class="gsc_a_x"></th><th class="gsc_a_t"></th><th class="gsc_a_c"></th><th class="gsc_a_y"></th></tr><tr id="gsc_a_trh" class="gs_sth_b"><th class="gsc_a_x" scope="col"><span id="gsc_a_xall"><a href="javascript:void(0)" id="gsc_x_all" role="checkbox" aria-checked="false" aria-label="Select all" data-s="0" class="gs_cb_gen gs_in_cb gs_in_cbj"><span class="gs_lbl"></span><span class="gs_chk"></span><span class="gs_cbx"></span></a></span></th><th class="gsc_a_t" scope="col"><span id="gsc_a_ta"><a href="/citations?hl=en&amp;user=EgcGAUMAAAAJ&amp;view_op=list_works&amp;sortby=title" class="gsc_a_a">Title</a></span><div id="gsc_dd_add-r" class="gs_md_r gs_md_rmb gs_md_rmbl"><button type="button" id="gsc_dd_add-b" aria-controls="gsc_dd_add-d" aria-haspopup="true" ontouchstart="gs_evt_dsp(event)" class="gs_btnUCT gs_in_ib gs_btn_flat gs_btn_lrge gs_btn_half gs_btn_lsu gs_press gs_md_tb"><span class="gs_wr"><span class="gs_ico"></span><span class="gs_lbl"></span></span></button><div id="gsc_dd_add-d" class="gs_md_d gs_md_ulr" role="menu" tabindex="-1"><div class="gsc_dd_sec"><a class="gs_md_li" role="menuitem" tabindex="-1" href="javascript:void(0)" data-a="/citations?view_op=import_lookup&amp;hl=en&amp;imq=Michael+A.+Bentley&amp;json=">Add article groups</a><a class="gs_md_li" role="menuitem" tabindex="-1" href="javascript:void(0)" data-a="/citations?view_op=import_lookup&amp;hl=en&amp;imq=Michael+A.+Bentley&amp;json=&amp;btnA=1">Add articles</a><a class="gs_md_li" role="menuitem" tabindex="-1" href="javascript:void(0)" data-a="/citations?view_op=add_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate">Add article manually</a></div><div class="gsc_dd_sec gsc_dd_sep"><a class="gs_md_li" role="menuitem" tabindex="-1" href="/citations?view_op=list_updates&amp;hl=en&amp;user=EgcGAUMAAAAJ">Configure article updates</a></div></div></div><button type="button" id="gsc_btn_mer" class="gs_btnMRG gs_in_ib gs_btn_flat gs_btn_lrge gs_btn_lsu gs_btn_mph" disabled=""><span class="gs_wr"><span class="gs_ico"></span><span class="gs_lbl">Merge</span></span></button><button type="submit" id="gsc_btn_del" name="trash_btn" class="gs_btnDE gs_in_ib gs_btn_flat gs_btn_lrge gs_btn_lsu gs_btn_mph"><span class="gs_wr"><span class="gs_ico"></span><span class="gs_lbl">Delete</span></span></button><div id="gsc_dd_exp-r" class="gs_md_r gs_md_rmb gs_md_rmbl"><button type="button" id="gsc_dd_exp-b" aria-controls="gsc_dd_exp-d" aria-haspopup="true" ontouchstart="gs_evt_dsp(event)" class="gs_btnDWL gs_in_ib gs_btn_flat gs_btn_lrge gs_btn_lsu gs_btn_mph gs_press gs_md_tb"><span class="gs_wr"><span class="gs_ico"></span><span class="gs_lbl">Export</span></span></button><div id="gsc_dd_exp-d" class="gs_md_d gs_md_ulr" role="menu" tabindex="-1"><div class="gs_md_ul gs_md_ul_tb gs_md_ulr"><a class="gs_md_li" role="menuitem" tabindex="-1" href="javascript:void(0)" data-a="0">BibTeX</a><a class="gs_md_li" role="menuitem" tabindex="-1" href="javascript:void(0)" data-a="2">EndNote</a><a class="gs_md_li" role="menuitem" tabindex="-1" href="javascript:void(0)" data-a="3">RefMan</a><a class="gs_md_li" role="menuitem" tabindex="-1" href="javascript:void(0)" data-a="4">CSV</a></div></div></div><div id="gsc_dd_mor-r" class="gs_md_r gs_md_rmb gs_md_rmbl"><button type="button" id="gsc_dd_mor-b" aria-controls="gsc_dd_mor-d" aria-haspopup="true" ontouchstart="gs_evt_dsp(event)" class="gs_btnMOR gs_in_ib gs_btn_flat gs_btn_lrge gs_btn_half gs_btn_lsu gs_press gs_md_tb"><span class="gs_wr"><span class="gs_ico"></span><span class="gs_lbl"></span></span></button><div id="gsc_dd_mor-d" class="gs_md_d gs_md_ulr" role="menu" tabindex="-1"><div class="gsc_dd_sec"><a role="menuitem" href="/citations?view_op=list_trash&amp;hl=en" tabindex="-1" class="gs_md_li">View trash</a></div><div id="gsc_dd_mor-s" class="gs_oph gsc_dd_sec gsc_dd_sep"><a role="menuitem" href="/citations?hl=en&amp;user=EgcGAUMAAAAJ&amp;view_op=list_works" tabindex="-1" class="gs_md_li">Sort by citations</a><a role="menuitem" href="/citations?hl=en&amp;user=EgcGAUMAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" tabindex="-1" class="gs_md_li gsc_dd_mor-sel">Sort by year</a><a role="menuitem" href="/citations?hl=en&amp;user=EgcGAUMAAAAJ&amp;view_op=list_works&amp;sortby=title" tabindex="-1" class="gs_md_li">Sort by title</a></div><div id="gsc_dd_mor-p" class="gsc_dd_sep">Select articles to see merge, delete, and export buttons</div></div></div></th><th class="gsc_a_c" scope="col" dir="rtl"><span id="gsc_a_ca"><a href="/citations?hl=en&amp;user=EgcGAUMAAAAJ&amp;view_op=list_works" class="gsc_a_a">Cited by</a></span></th><th class="gsc_a_y" scope="col"><span class="gsc_a_h" id="gsc_a_ha">Year</span></th></tr></thead><tbody id="gsc_a_b"><tr class="gsc_a_tr"><td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:YsMSGLbcyi4C" value="EgcGAUMAAAAJ:YsMSGLbcyi4C"><label for="gsc_xEgcGAUMAAAAJ:YsMSGLbcyi4C"></label><span class="gs_chk"></span><span class="gs_cbx"></span></span></td><td class="gsc_a_t"><a href="javascript:void(0)" data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:YsMSGLbcyi4C" class="gsc_a_at">Molecular high-grade B cell lymphoma: defining a poor risk group requiring different approaches to therapy</a><div class="gs_gray">C Sha, S Barrans, F Cucco, MA Bentley, MA Care, T Cummin, H Kennedy, ...</div><div class="gs_gray">Journal of Clinical Oncology 37 (3), 202-213<span class="gs_oph">, 2019</span></div></td><td class="gsc_a_c"><a href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=7946787517570199311" class="gsc_a_ac gs_ibl">10</a></td><td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2019</span></td></tr><tr class="gsc_a_tr"><td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:Tyk-4Ss8FVUC" value="EgcGAUMAAAAJ:Tyk-4Ss8FVUC"><label for="gsc_xEgcGAUMAAAAJ:Tyk-4Ss8FVUC"></label><span class="gs_chk"></span><span class="gs_cbx"></span></span></td><td class="gsc_a_t"><a href="javascript:void(0)" data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:Tyk-4Ss8FVUC" class="gsc_a_at">Social wasps as models to study the major evolutionary transition to superorganismality</a><div class="gs_gray">D Taylor, MA Bentley, S Sumner</div><div class="gs_gray">Current opinion in insect science 28, 26-32<span class="gs_oph">, 2018</span></div></td><td class="gsc_a_c"><a href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=7901727735096027353" class="gsc_a_ac gs_ibl">1</a></td><td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2018</span></td></tr><tr class="gsc_a_tr"><td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:IjCSPb-OGe4C" value="EgcGAUMAAAAJ:IjCSPb-OGe4C"><label for="gsc_xEgcGAUMAAAAJ:IjCSPb-OGe4C"></label><span class="gs_chk"></span><span class="gs_cbx"></span></span></td><td class="gsc_a_t"><a href="javascript:void(0)" data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:IjCSPb-OGe4C" class="gsc_a_at">GABA (γ-Aminobutyric Acid) Uptake Via the GABA Permease GabP Represses Virulence Gene Expression in <i>Pseudomonas syringae</i> pv. tomato DC3000</a><div class="gs_gray">SL McCraw, DH Park, R Jones, MA Bentley, A Rico, RG Ratcliffe, ...</div><div class="gs_gray">Molecular Plant-Microbe Interactions 29 (12), 938-949<span class="gs_oph">, 2016</span></div></td><td class="gsc_a_c"><a href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=7670052584093700671,5511352434519727397,9993304024869519245" class="gsc_a_ac gs_ibl">6</a></td><td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2016</span></td></tr><tr class="gsc_a_tr"><td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:UeHWp8X0CEIC" value="EgcGAUMAAAAJ:UeHWp8X0CEIC"><label for="gsc_xEgcGAUMAAAAJ:UeHWp8X0CEIC"></label><span class="gs_chk"></span><span class="gs_cbx"></span></span></td><td class="gsc_a_t"><a href="javascript:void(0)" data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:UeHWp8X0CEIC" class="gsc_a_at">Validation of reference genes for robust qRT-PCR gene expression analysis in the rice blast fungus Magnaporthe oryzae</a><div class="gs_gray">SC Omar, MA Bentley, G Morieri, GM Preston, SJ Gurr</div><div class="gs_gray">PloS one 11 (8), e0160637<span class="gs_oph">, 2016</span></div></td><td class="gsc_a_c"><a href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=17856639426989945807" class="gsc_a_ac gs_ibl">7</a></td><td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2016</span></td></tr><tr class="gsc_a_tr"><td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:qjMakFHDy7sC" value="EgcGAUMAAAAJ:qjMakFHDy7sC"><label for="gsc_xEgcGAUMAAAAJ:qjMakFHDy7sC"></label><span class="gs_chk"></span><span class="gs_cbx"></span></span></td><td class="gsc_a_t"><a href="javascript:void(0)" data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:qjMakFHDy7sC" class="gsc_a_at">Conservation, duplication, and divergence of five opsin genes in insect evolution</a><div class="gs_gray">R Feuda, F Marletaz, MA Bentley, PWH Holland</div><div class="gs_gray">Genome biology and evolution 8 (3), 579-587<span class="gs_oph">, 2016</span></div></td><td class="gsc_a_c"><a href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=2860190607999997052,7918005297226278533" class="gsc_a_ac gs_ibl">29</a></td><td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2016</span></td></tr><tr class="gsc_a_tr"><td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:2osOgNQ5qMEC" value="EgcGAUMAAAAJ:2osOgNQ5qMEC"><label for="gsc_xEgcGAUMAAAAJ:2osOgNQ5qMEC"></label><span class="gs_chk"></span><span class="gs_cbx"></span></span></td><td class="gsc_a_t"><a href="javascript:void(0)" data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:2osOgNQ5qMEC" class="gsc_a_at">Human oxygen sensing may have origins in prokaryotic elongation factor Tu prolyl-hydroxylation</a><div class="gs_gray">JS Scotti, IKH Leung, W Ge, MA Bentley, J Paps, HB Kramer, J Lee, ...</div><div class="gs_gray">Proceedings of the National Academy of Sciences 111 (37), 13331-13336<span class="gs_oph">, 2014</span></div></td><td class="gsc_a_c"><a href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=13875550299593568114" class="gsc_a_ac gs_ibl">46</a></td><td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2014</span></td></tr><tr class="gsc_a_tr"><td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:d1gkVwhDpl0C" value="EgcGAUMAAAAJ:d1gkVwhDpl0C"><label for="gsc_xEgcGAUMAAAAJ:d1gkVwhDpl0C"></label><span class="gs_chk"></span><span class="gs_cbx"></span></span></td><td class="gsc_a_t"><a href="javascript:void(0)" data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:d1gkVwhDpl0C" class="gsc_a_at">Pseudomonas protegens Pf-5 causes discoloration and pitting of mushroom caps due to the production of antifungal metabolites</a><div class="gs_gray">MD Henkels, TA Kidarsa, BT Shaffer, NC Goebel, P Burlinson, ...</div><div class="gs_gray">Molecular Plant-Microbe Interactions 27 (7), 733-746<span class="gs_oph">, 2014</span></div></td><td class="gsc_a_c"><a href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=10639979752598194990" class="gsc_a_ac gs_ibl">11</a></td><td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2014</span></td></tr><tr class="gsc_a_tr"><td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:u-x6o8ySG0sC" value="EgcGAUMAAAAJ:u-x6o8ySG0sC"><label for="gsc_xEgcGAUMAAAAJ:u-x6o8ySG0sC"></label><span class="gs_chk"></span><span class="gs_cbx"></span></span></td><td class="gsc_a_t"><a href="javascript:void(0)" data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:u-x6o8ySG0sC" class="gsc_a_at">Circulating microRNA profiles reflect the presence of breast tumours but not the profiles of microRNAs within the tumours</a><div class="gs_gray">VJ Cookson, MA Bentley, BV Hogan, K Horgan, BE Hayward, ...</div><div class="gs_gray">Cellular Oncology 35 (4), 301-308<span class="gs_oph">, 2012</span></div></td><td class="gsc_a_c"><a href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=15436913953503934174" class="gsc_a_ac gs_ibl">70</a></td><td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2012</span></td></tr><tr class="gsc_a_tr"><td class="gsc_a_x"><span class="gs_in_cb gs_in_cbj" onclick="void(0)"><input type="checkbox" name="s" id="gsc_xEgcGAUMAAAAJ:u5HHmVD_uO8C" value="EgcGAUMAAAAJ:u5HHmVD_uO8C"><label for="gsc_xEgcGAUMAAAAJ:u5HHmVD_uO8C"></label><span class="gs_chk"></span><span class="gs_cbx"></span></span></td><td class="gsc_a_t"><a href="javascript:void(0)" data-href="/citations?view_op=view_citation&amp;hl=en&amp;user=EgcGAUMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=EgcGAUMAAAAJ:u5HHmVD_uO8C" class="gsc_a_at">Reward quality influences the development of learned olfactory biases in honeybees</a><div class="gs_gray">GA Wright, AF Choudhary, MA Bentley</div><div class="gs_gray">Proceedings of the Royal Society B: Biological Sciences 276 (1667), 2597-2604<span class="gs_oph">, 2009</span></div></td><td class="gsc_a_c"><a href="https://scholar.google.co.uk/scholar?oi=bibs&amp;hl=en&amp;cites=3229307655214097246" class="gsc_a_ac gs_ibl">46</a></td><td class="gsc_a_y"><span class="gsc_a_h gsc_a_hc gs_ibl">2009</span></td></tr></tbody></table><div id="gsc_a_sp"></div><div id="gsc_a_err" class="gs_alrt">The system can't perform the operation now. Try again later.</div></div>
-                </div>
-                <a class="align-bottom" href="javascript: scroll('contact');">
-                    <i class="fas fa-arrow-circle-down fa-2x arrow"></i>
-                </a>
-            </div>  
-        </section>
+			const element = document.getElementById(id);
+			const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
+			const yOffset = -75;
 
-        <div class="parallax parallax-publications"></div>
+			window.scrollTo({
+				top: yCoordinate + yOffset,
+				behavior: 'smooth'
+			});
+		}
+	</script>
 
-        <section id="contact" class="section-contact">            
-            <div class="container">
-                <h1><i class="fas fa-envelope"></i> Contact</h1>
-                <div class="row map">
-                    <div class="col-sm-5">                        
-                        <h4>Dr Michael A. Bentley</h4>
-                        <p>Department of Biochemistry</p>
-                        <p>University of Oxford</p>
-                        <p>3 S Parks Rd</p>
-                        <p>Oxford</p>
-                        <p>OX1 3QU</p>    
-                        
-                        <p>michael.bentley <i class="fas fa-at fa-sm"></i> zoo.ox.ac.uk</p>                    
-                    </div>
-                    <div class="col-sm-7">
-                        <div id="map"></div>                        
-                    </div>
-                </div>
-                <a class="align-bottom" href="javascript: scroll('footer');">
-                    <i class="fas fa-arrow-circle-down fa-2x arrow"></i>
-                </a>
-            </div>  
-        </section>
+	<script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of oxford
+			var oxford = { lat: 51.7593844, lng: -1.2557531 };
+			// The map, centered at oxford
+			var map = new google.maps.Map(
+				document.getElementById('map'), {
+					zoom: 14,
+					center: oxford,
+					styles: [
+						{
+							"featureType": "water",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#e9e9e9"
+								},
+								{
+									"lightness": 17
+								}
+							]
+						},
+						{
+							"featureType": "landscape",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#f5f5f5"
+								},
+								{
+									"lightness": 20
+								}
+							]
+						},
+						{
+							"featureType": "road.highway",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 17
+								}
+							]
+						},
+						{
+							"featureType": "road.highway",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 29
+								},
+								{
+									"weight": 0.2
+								}
+							]
+						},
+						{
+							"featureType": "road.arterial",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 18
+								}
+							]
+						},
+						{
+							"featureType": "road.local",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 16
+								}
+							]
+						},
+						{
+							"featureType": "poi",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#f5f5f5"
+								},
+								{
+									"lightness": 21
+								}
+							]
+						},
+						{
+							"featureType": "poi.park",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#dedede"
+								},
+								{
+									"lightness": 21
+								}
+							]
+						},
+						{
+							"elementType": "labels.text.stroke",
+							"stylers": [
+								{
+									"visibility": "on"
+								},
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 16
+								}
+							]
+						},
+						{
+							"elementType": "labels.text.fill",
+							"stylers": [
+								{
+									"saturation": 36
+								},
+								{
+									"color": "#333333"
+								},
+								{
+									"lightness": 40
+								}
+							]
+						},
+						{
+							"elementType": "labels.icon",
+							"stylers": [
+								{
+									"visibility": "off"
+								}
+							]
+						},
+						{
+							"featureType": "transit",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#f2f2f2"
+								},
+								{
+									"lightness": 19
+								}
+							]
+						},
+						{
+							"featureType": "administrative",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#fefefe"
+								},
+								{
+									"lightness": 20
+								}
+							]
+						},
+						{
+							"featureType": "administrative",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#fefefe"
+								},
+								{
+									"lightness": 17
+								},
+								{
+									"weight": 1.2
+								}
+							]
+						}
+					]
+				}
+			);
 
-        <div class="parallax parallax-contact"></div>
-
-    </main>
-
-    <footer id="footer">
-
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <script>
-        $('.navbar-nav a').on('click', function () {
-            $( '.navbar-nav').find( 'li.active' ).removeClass( 'active' );
-            $( this ).parent('li').addClass('active');
-        });
-    </script>
-
-    <script>
-        function scroll(id){
-
-            const element = document.getElementById(id);
-            // element.className = "active";
-            
-            const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
-            const yOffset = -75; 
-
-            window.scrollTo({
-                top: yCoordinate + yOffset,
-                behavior: 'smooth'
-            });
-
-            
-
-        }
-
-    </script>
-
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of oxford
-            var oxford = {lat: 51.7593844, lng: -1.2557531};
-            // The map, centered at oxford
-            var map = new google.maps.Map(
-                document.getElementById('map'), {
-                    zoom: 14, 
-                    center: oxford,
-                    styles: [
-                        {
-                            "elementType": "geometry",
-                            "stylers": [
-                            {
-                                "color": "#ebe3cd"
-                            }
-                            ]
-                        },
-                        {
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                            {
-                                "color": "#523735"
-                            }
-                            ]
-                        },
-                        {
-                            "elementType": "labels.text.stroke",
-                            "stylers": [
-                            {
-                                "color": "#f5f1e6"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "administrative",
-                            "elementType": "geometry.stroke",
-                            "stylers": [
-                            {
-                                "color": "#c9b2a6"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "administrative.land_parcel",
-                            "elementType": "geometry.stroke",
-                            "stylers": [
-                            {
-                                "color": "#dcd2be"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "administrative.land_parcel",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                            {
-                                "color": "#ae9e90"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "landscape.natural",
-                            "elementType": "geometry",
-                            "stylers": [
-                            {
-                                "color": "#dfd2ae"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "poi",
-                            "elementType": "geometry",
-                            "stylers": [
-                            {
-                                "color": "#dfd2ae"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "poi",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                            {
-                                "color": "#93817c"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "poi.park",
-                            "elementType": "geometry.fill",
-                            "stylers": [
-                            {
-                                "color": "#a5b076"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "poi.park",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                            {
-                                "color": "#447530"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "road",
-                            "elementType": "geometry",
-                            "stylers": [
-                            {
-                                "color": "#f5f1e6"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "road.arterial",
-                            "elementType": "geometry",
-                            "stylers": [
-                            {
-                                "color": "#fdfcf8"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway",
-                            "elementType": "geometry",
-                            "stylers": [
-                            {
-                                "color": "#f8c967"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway",
-                            "elementType": "geometry.stroke",
-                            "stylers": [
-                            {
-                                "color": "#e9bc62"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway.controlled_access",
-                            "elementType": "geometry",
-                            "stylers": [
-                            {
-                                "color": "#e98d58"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "road.highway.controlled_access",
-                            "elementType": "geometry.stroke",
-                            "stylers": [
-                            {
-                                "color": "#db8555"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "road.local",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                            {
-                                "color": "#806b63"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "transit.line",
-                            "elementType": "geometry",
-                            "stylers": [
-                            {
-                                "color": "#dfd2ae"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "transit.line",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                            {
-                                "color": "#8f7d77"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "transit.line",
-                            "elementType": "labels.text.stroke",
-                            "stylers": [
-                            {
-                                "color": "#ebe3cd"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "transit.station",
-                            "elementType": "geometry",
-                            "stylers": [
-                            {
-                                "color": "#dfd2ae"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "water",
-                            "elementType": "geometry.fill",
-                            "stylers": [
-                            {
-                                "color": "#b9d3c2"
-                            }
-                            ]
-                        },
-                        {
-                            "featureType": "water",
-                            "elementType": "labels.text.fill",
-                            "stylers": [
-                            {
-                                "color": "#92998d"
-                            }
-                            ]
-                        }
-                    ]
-                }
-            );
-            
-            // The marker, positioned at oxford
-            var marker = new google.maps.Marker({position: oxford, map: map});
-        }
-    </script>
+			// The marker, positioned at oxford
+			var marker = new google.maps.Marker({ position: oxford, map: map });
+		}
+	</script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgZZlAjmafzBKMKzuO5nU4ONgBKgXGmrg&callback=initMap" type="text/javascript"></script>
 
