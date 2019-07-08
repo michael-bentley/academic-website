@@ -164,9 +164,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script>
+        $('.navbar-nav a').on('click', function () {
+            $( '.navbar-nav').find( 'li.active' ).removeClass( 'active' );
+            $( this ).parent('li').addClass('active');
+        });
+    </script>
+
+    <script>
         function scroll(id){
 
             const element = document.getElementById(id);
+            // element.className = "active";
+            
             const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
             const yOffset = -75; 
 
@@ -174,6 +183,8 @@
                 top: yCoordinate + yOffset,
                 behavior: 'smooth'
             });
+
+            
 
         }
 

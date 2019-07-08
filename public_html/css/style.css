@@ -63,7 +63,7 @@ body, html {
     }
 }
 
-.active a{
+.navbar-nav li.active > a {
     color: #FFEB3B !important;
 }
 
