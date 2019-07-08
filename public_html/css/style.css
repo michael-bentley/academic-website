@@ -128,6 +128,11 @@ section{
     padding-bottom: 75px;
 }
 
+.research-details{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
 .section-welcome{
     position: relative;
     top: 55%;
@@ -167,16 +172,9 @@ section{
     display: none;
 }
 
-.section-publications table{
-    
-}
-
-.section-publications table{
-    
-}
-
 table { 
     border-collapse: collapse;
+    font-size: 20px;
     margin-top:50px;
     margin-bottom:50px;
 } 
@@ -188,9 +186,20 @@ th {
 
 th a { 
     background-color:#424242; 
+    font-weight: bold;
     color:white; 
     font-family: 'Poiret One', cursive;         
-} 
+}
+td a {
+    color:#424242;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+td a:hover {
+    color:black;
+}
+
 th, td { 
     width:100%; 
     text-align:left; 
